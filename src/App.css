@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.arrow button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #2d2d2d;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.Artikel button, .subscribe button {
+  background: #cc5500;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.Artikel button {
+  margin-top: 10px;
+}
+
+form button {
+  background: #2d2d2d;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+  margin-right: 15px;
+  outline: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+nav.black {
+  background: #2d2d2d;
+  opacity: 0.8;
+  height: 100px;
+  padding: 10px 100px;
+}
+
+nav .logo {
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 22px 20px;
+  height: 80px;
+  float: left;
+  transition: .3s;
+}
+
+nav .logo span{
+  color: #cc5500;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  line-height: 80px;
+  color: #2d2d2d;
+  padding: 12px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+nav.black ul li {
+  color: #fff;
+}
+
+nav ul li:focus{
+  outline: none;
+}
+
+.check:selected {
+  color: blue;
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: url(bg.jpg);
+  display: flex;
+  justify-content: flex-start;
+  padding: 300px 100px;
+}
+
+.textbox h2{
+  font-size: 50px;
+}
+
+.textbox p{
+  width: 50%;
+}
+
+/* parallax */
+.container {
+  max-width: 960px;
+}
+/* parallax */
+
+.Artikel {
+  width: 100%;
+  height: 100vh;
+  padding: 300px 100px;
+}
+
+.Artikel h1 {
+  font-size: 50px;
+}
+
+.Artikel p {
+  width: 75%;
+}
+
+.Artikel, .counter {
+  width: 100%;
+  height: 100vh;
+}
+
+.counter {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.counter .counter-left {
+  width: 50%;
+  height: 100%;
+  float: right;
+  flex-direction: column;
+}
+
+.counter .counter-left h1{
+  font-size: 35px;
+  padding-top: 250px;
+  padding-left: 100px;
+  color: #cc5500;
+}
+
+.counter .counter-left p{
+  width: 75%;
+
+  padding-left: 100px;
+}
+
+.counter .counter-right {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background: #cc5500;
+  color: #2d2d2d;
+  border-top-left-radius: 20px;
+}
+
+.counter .counter-right form {
+  margin-top: 125px;
+  padding-left: 100px;
+}
+
+/*-------------------------------------------------------------------*/
+.gender {
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+}
+/*-------------------------------------------------------------------*/
+.cek {
+  display: flex;
+  flex-direction: column;
+}
+form input[id="usia"] {
+  background: #fff;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+form input[id="berat"] {
+  background: #fff;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+form input[id="tinggi"] {
+  background: #fff;
+  width: 200px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 25vh;
+  background: #2d2d2d;
+  margin-top: auto;
+}
+
+footer .socialmedia {
+  float: left;
+  color: white;
+}
+
+footer .socialmedia ul {
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0px 50px;
+  display: flex;
+}
+
+footer .socialmedia ul li {
+  list-style: none;
+  line-height: 80px;
+  font-size: 30px;
+  padding: 30px 30px;
+}
+
+footer .foot {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+footer .foot .logo {
+  position: absolute;
+  margin: 0px 500px;
+  font-size: 2em;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 22px 20px;
+  height: 80px;
+}
+
+footer .foot .logo span{
+  color: #cc5500;
+}
+
+footer .foot p {
+  margin: 70px 500px;
+  color: #fff;
+  font-size: 12px;
+}
+
+footer .subscribe {
+  float: right;
+  margin: 50px;
+  padding: 0;
+}
+
+footer .subscribe input {
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  padding: 5px 15px 5px 15px;
+  outline: none;
+}
