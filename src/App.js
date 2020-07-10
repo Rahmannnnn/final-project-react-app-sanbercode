@@ -5,16 +5,30 @@ import Header from './Parts/Header/Header';
 import Body from './Parts/Body/Body';
 import Footer from './Parts/Footer/Footer';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Route} from 'react-router-dom';
 
-function App() {
-  return (
+function Homepage(){
+  return(
     <>
       <Navbar/>
       <Header/>
       <Body/>
       <Footer/>
     </>
-  );
+  )
 }
 
-export default App;
+
+function AppRouter(){
+  return(
+    <Router>
+      <Route path="/" exact component={Homepage} />
+      <Route path="/more" component={Footer} />
+    </Router>
+  )
+}
+  
+
+export default AppRouter;

@@ -5,7 +5,7 @@ function Body(){
     return (
 
       <body className="View" id="article">
-        <Article judul="Apa itu Kalori?" text="Halo halo halo halo oooooooooooo ooooooooooooooo" />
+        <Article judul="cek" text="Halo halo halo halo oooooooooooo ooooooooooooooo" />
 
         <div className="counter" id="counter">
           <div className="counter-left">
