@@ -9,6 +9,7 @@ function Article(props) {
           <p> {props.text} </p>
           <Link to="/more"><button>Read More</button></Link>
         </div>
+        
     </>
   )
 }

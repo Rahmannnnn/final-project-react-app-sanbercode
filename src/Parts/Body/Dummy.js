@@ -16,8 +16,10 @@ function Dummy() {
         </div>
         <div className="addition"></div>
         <div className="dummy">
-            <h1>Berapa Banyak Kalori yang Anda Butuhkan Per Hari?</h1>
-            <p>Jika Anda pernah memperhatikan tabel informasi nilai gizi pada kemasan makanan, maka Anda akan sering menemukan kalimat “Persen AKG berdasarkan kebutuhan energi 2000 kkal. Kebutuhan energi Anda mungkin lebih tinggi atau lebih rendah.” Ini berarti kebutuhan kalori Anda per hari tidaklah sama dengan orang lain, karena banyak faktor yang dapat mempengaruhi kebutuhan kalori Anda. Sebetulnya bagaimana cara menghitung kebutuhan kalori sehari-hari?</p>
+            <div className="judul">
+                <h1>Berapa Banyak Kalori yang Anda Butuhkan Per Hari?</h1>
+                <p>Jika Anda pernah memperhatikan tabel informasi nilai gizi pada kemasan makanan, maka Anda akan sering menemukan kalimat “Persen AKG berdasarkan kebutuhan energi 2000 kkal. Kebutuhan energi Anda mungkin lebih tinggi atau lebih rendah.” Ini berarti kebutuhan kalori Anda per hari tidaklah sama dengan orang lain, karena banyak faktor yang dapat mempengaruhi kebutuhan kalori Anda. Sebetulnya bagaimana cara menghitung kebutuhan kalori sehari-hari?</p>
+            </div>
             <h2>Apa itu kalori?</h2>
             <p>Cara menghitung kebutuhan kalori tiap orang berbeda-beda, karena akan dihitung berdasarkan jenis kelamin, usia, tinggi dan berat badan, komposisi tubuh, aktivitas, hingga keadaan fisik masing-masing. Kalori yang dibutuhkan oleh laki-laki berbeda dengan perempuan meskipun berada pada rentang usia yang sama. Dua orang yang kembar sekalipun akan memiliki kebutuhan kalori yang berbeda, tergantung pada keadaan fisik dan aktivitasnya sehari-hari.</p>
             <p>Jumlah kalori dalam suatu makanan biasanya ditulis dalam satuan “kilokalori” atau “kkal”. Sebagai contoh, 500 kalori akan ditulis sebagai 500 kkal. Selain dalam kkal, kalori juga dapat ditulis dalam satuan “kilojoules” atau “kJ”. 1 kJ setara dengan 0,239 kalori.</p>

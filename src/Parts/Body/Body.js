@@ -4,8 +4,9 @@ import Converter from './Converter';
 
 function Hasil(props) {
   return(
-    <div className="counter-left">
-      <h1>Hasil : {props.total}</h1>
+    <div className="hasil">
+      <p>Skor kamu :</p>
+      <h1>{props.total}</h1>
     </div>
   )
 }
@@ -52,7 +53,7 @@ class Body extends React.Component{
   onSubmit(event) {
     const {gender, usia, berat, tinggi, level} = this.state;
     let total = (gender==="Laki-Laki") ? (66.5 + (13*berat) + (5*tinggi))/(5.8*usia) : (65.51 + (9.6*berat) + (1.9*tinggi))/(4.7*usia);
-    let total2 = (level === "Low") ? total*1.2 : (level === "Middle") ? total*1.3 : total*1.4;
+    let total2 = (level === "Low") ? total*1.2 : (level === "Middle") ? total*1.3 : (level === "High") ? total*1.4 : total*1.6;
     this.setState({total: total2});
     event.preventDefault();
   }
@@ -67,8 +68,9 @@ class Body extends React.Component{
     return (
       <body className="View" id="article">
         <Article judul="Berapa Banyak Kalori yang Anda Butuhkan Per Hari?" text="Jika Anda pernah memperhatikan tabel informasi nilai gizi pada kemasan makanan, maka Anda akan sering menemukan kalimat “Persen AKG berdasarkan kebutuhan energi 2000 kkal. Kebutuhan energi Anda mungkin lebih tinggi atau lebih rendah.” Ini berarti kebutuhan kalori Anda per hari tidaklah sama dengan orang lain, karena banyak faktor yang dapat mempengaruhi kebutuhan kalori Anda. Sebetulnya bagaimana cara menghitung kebutuhan kalori sehari-hari?" />
-        <Converter/>
+
         <div className="counter" id="counter">
+          <div className="left-addition"></div>
           <CounterLeft/>
           <div className="counter-right">
             <form onSubmit={this.onSubmit}>
@@ -86,10 +88,17 @@ class Body extends React.Component{
 
 
                 <div className="activity">Activity Level<br/>
-                  {this.state.level === 'Low' ? <p> Low </p> : this.state.level === 'Middle' ? <p> Middle </p> : <p> High </p> }
+                  {this.state.level === 'Low' ?
+                    <p><span>Low : </span>Aktivitas hidup utama seperti istirahat, kerja kantoran atau menyetir. Kemungkinan melibatkan pekerjaan rumah moderat dan berdiri tetapi tidak ada latihan ringan yang dilakukan.</p>:
+                  this.state.level === 'Middle' ?
+                    <p><span>Middle : </span> Disamping kegiatan sehari-hari, melakukan kegiatan yang lebih berat, seperti berdiri lebih lama atau pekerjaan rumah. Beberapa bentuk latihan dilakukan, seperti jalan pelan, bersepeda santai atau berkebun. </p> :
+                  this.state.level === 'High' ?
+                    <p> <span>High : </span> Sedikit duduk / istirahat dan kemungkinan bekerja dilingkungan yang membutuhkan berdiri dan/atau sedikit kerja fisik. Secara teratur melakukan olahraga ringan, seperti menari, jalan cepat atau berenang.</p> :
+                    <p><span>Very High : </span>Lingkungan kerja fisik intensif seperti konstruksi dan / atau melakukan kegiatan yang berat banyak hari dalam seminggu, seperti jogging, menggunakan peralatan olahraga atau berpartisipasi dalam olahraga fisik.</p> }
                   <label><input type="radio" name="level" value="Low" onChange={this.levelChange} checked={this.state.level === "Low"}/>Low</label>
                   <label><input type="radio" name="level" value="Middle" onChange={this.levelChange} checked={this.state.level === "Middle"}/>Middle</label>
                   <label><input type="radio" name="level" value="High" onChange={this.levelChange} checked={this.state.level === "High"}/>High</label>
+                  <label><input type="radio" name="level" value="Very High" onChange={this.levelChange} checked={this.state.level === "Very High"}/>Very High</label>
                 </div>
                 <button type="submit">Calculate</button>
               </h1>
@@ -97,7 +106,7 @@ class Body extends React.Component{
           </div>
         </div>
         { this.state.total > 0 ? <Hasil total={this.state.total}/> : <div></div>}
-
+        <Converter/>
       </body>
       
     );

@@ -149,7 +149,7 @@ nav ul li:focus {
 }
 
 
-.Artikel {
+.Artikel, .dummy .judul {
   width: 100%;
   height: 100vh;
   padding: 250px 100px;
@@ -204,6 +204,7 @@ nav ul li:focus {
   background: #cc5500;
   color: #2d2d2d;
   border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .counter .counter-right form {
@@ -211,6 +212,17 @@ nav ul li:focus {
   padding-left: 100px;
 }
 
+.hasil {
+  background: #cc5500;
+  margin-top: 20px;
+  font-size: 16px;
+  padding-left: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  /* border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px; */
+}
 /*-------------------------------------------------------------------*/
 .gender, .activity {
   margin-top: 10px;
@@ -223,9 +235,18 @@ nav ul li:focus {
 }
 
 .activity p {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
-  width: 75%;
+  width: 85%;
+}
+
+.dummy .judul {
+  height: 100vh;
+}
+.activity span {
+  font-size: 12px;
+  font-weight: 700;
+  width: 85%;
 }
 
 .masukan {
@@ -365,4 +386,12 @@ footer .subscribe input {
   width: 100%;
   background: #cc5500;
   height: 60px;
+}
+
+.left-addition {
+  width: 40px;
+  height: 100%;
+  background: #cc5500;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
