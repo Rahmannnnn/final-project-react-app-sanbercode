@@ -6,7 +6,7 @@ function Header() {
   return (
     <>
     <header id="header">
-      <Arrow/>
+      {/* <Arrow/> */}
       <Banner headText="Stay Healthy, Stay Alive"/>
     </header>
     </>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-scroll';
+import {Link, animateScroll as scroll} from 'react-scroll';
 import {Link as Links, BrowserRouter as Router} from 'react-router-dom';
 
 function Linked(props){
@@ -18,11 +18,18 @@ function Linked(props){
 }
 
 class Navbar extends Component {
+  scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   render(){
     return (
       <Router>
         <div className="wrapper">
           <nav>
+            <div className="arrow">
+              <button id="top" onClick={this.scrollToTop}><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+            </div>
             <div className="logo">
               Stay<span>Healthy</span>
             </div>
