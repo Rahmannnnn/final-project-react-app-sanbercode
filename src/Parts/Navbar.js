@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link, animateScroll as scroll} from 'react-scroll';
-import {Link as Links, BrowserRouter as Router} from 'react-router-dom';
 
 function Linked(props){
   return(
@@ -10,8 +9,8 @@ function Linked(props){
     smooth={true}
     duration={1000}
     to={props.to}
-    activeClassName="selected"><Links to={props.route}>
-      {props.text}</Links>
+    activeClassName="selected">
+      {props.text}
     </Link>
   )
 }
@@ -23,7 +22,6 @@ class Navbar extends Component {
 
   render(){
     return (
-      <Router>
         <div className="wrapper">
           <nav>
             
@@ -32,17 +30,24 @@ class Navbar extends Component {
             </div>
 
             <div className="logo">
-              Stay<span>Healthy</span>
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                to="header"
+                activeClassName="selected">
+                  Stay<span>Healthy</span>
+              </Link>
+              
             </div>
             <ul className="right-nav">
-              <li><Linked to="header" text="Home" route="/"/></li>
-              <li><Linked to="article" text="Article" route="/article"/></li>
-              <li><Linked to="counter" text="Counter" route="/counter"/></li> 
+              <li><Linked to="header" text="Home"/></li>
+              <li><Linked to="article" text="Article"/></li>
+              <li><Linked to="counter" text="Counter"/></li> 
             </ul>
           </nav>
         </div>
-      </Router>
-      
     )
   }
 

@@ -4,6 +4,7 @@ import Navbar from './Parts/Navbar';
 import Header from './Parts/Header/Header';
 import Body from './Parts/Body/Body';
 import Footer from './Parts/Footer/Footer';
+import Dummy from './Parts/Body/Dummy';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -25,7 +26,7 @@ function AppRouter(){
   return(
     <Router>
       <Route path="/" exact component={Homepage} />
-      <Route path="/more" component={Footer} />
+      <Route path="/more" component={Dummy} />
     </Router>
   )
 }

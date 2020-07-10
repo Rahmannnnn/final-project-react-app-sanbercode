@@ -6,7 +6,20 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+.back button {
+  position: fixed;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 70px;
+  height: 50px;
+  background: #2d2d2d;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
 .arrow button {
   position: fixed;
   bottom: 40px;
@@ -19,7 +32,7 @@
   border: none;
   outline: none;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .Artikel button,
@@ -31,6 +44,7 @@
   padding: 5px 15px 5px 15px;
   border-radius: 5px;
   outline: none;
+  cursor: pointer;
 }
 
 .Artikel button {
@@ -46,6 +60,7 @@ form button {
   border-radius: 5px;
   margin-right: 15px;
   outline: none;
+  cursor: pointer;
 }
 
 nav {
@@ -77,6 +92,7 @@ nav .logo {
   height: 80px;
   float: left;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 nav .logo span {
@@ -89,6 +105,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  cursor: pointer;
 }
 
 nav ul li {
@@ -131,20 +148,16 @@ nav ul li:focus {
   width: 50%;
 }
 
-/* parallax */
-.container {
-  max-width: 960px;
-}
-/* parallax */
 
 .Artikel {
   width: 100%;
   height: 100vh;
-  padding: 300px 100px;
+  padding: 250px 100px;
 }
 
 .Artikel h1 {
   font-size: 50px;
+  width: 75%;
 }
 
 .Artikel p {
@@ -172,10 +185,10 @@ nav ul li:focus {
 }
 
 .counter .counter-left h1 {
-  font-size: 35px;
+  font-size: 42px;
   padding-top: 250px;
   padding-left: 100px;
-  color: #cc5500;
+  color: #2d2d2d;
 }
 
 .counter .counter-left p {
@@ -199,16 +212,31 @@ nav ul li:focus {
 }
 
 /*-------------------------------------------------------------------*/
-.gender {
-  height: 50px;
-  width: 250px;
-  font-size: 20px;
+.gender, .activity {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.gender label, .activity label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.activity p {
+  font-size: 16px;
+  font-weight: 500;
+  width: 75%;
+}
+
+.masukan {
+  margin-top: 10px;
 }
 /*-------------------------------------------------------------------*/
-.cek {
-  display: flex;
-  flex-direction: column;
+
+form h1 {
+  font-size: 40px;
 }
+
 form input[id="usia"] {
   background: #fff;
   width: 200px;
@@ -248,27 +276,18 @@ footer {
 
 footer .socialmedia {
   float: left;
-  color: white;
 }
 
-footer .socialmedia ul {
-  list-style: none;
-  float: left;
-  margin: 0;
-  padding: 0px 50px;
-  display: flex;
-}
-
-footer .socialmedia ul li {
-  list-style: none;
-  line-height: 80px;
-  font-size: 30px;
-  padding: 30px 30px;
-  
-}
-
-footer .socialmedia:hover {
-  transform: translateY(-2px);
+footer .socialmedia button {
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #cc5500;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
 }
 
 footer .foot {
@@ -288,6 +307,7 @@ footer .foot .logo {
   text-decoration: none;
   padding: 22px 20px;
   height: 80px;
+  cursor: pointer;
 }
 
 footer .foot .logo span {
@@ -312,4 +332,37 @@ footer .subscribe input {
   margin: 10px;
   padding: 5px 15px 5px 15px;
   outline: none;
+}
+
+.dummy {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+.dummy h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.dummy h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.dummy p {
+  font-size: 16px;
+}
+
+.addition {
+  width: 100%;
+  background: #cc5500;
+  height: 20px;
+}
+
+.addition2 {
+  width: 100%;
+  background: #cc5500;
+  height: 60px;
 }
