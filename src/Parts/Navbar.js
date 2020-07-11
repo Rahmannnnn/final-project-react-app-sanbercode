@@ -22,12 +22,25 @@ class Navbar extends Component {
 
   render(){
     return (
-        <div className="wrapper">
+        <div className="wrapper" data-testid="Navbar">
+          <div className="telegram">
+              <button onClick={() => (window.open("https://t.me/RahmanGhani"))}><i class="fa fa-telegram" aria-hidden="true"></i></button>
+          </div>
+
+          <div className="instagram">
+            <button onClick={() => (window.open("https://www.instagram.com/rahman_ghni"))}><i class="fa fa-instagram" aria-hidden="true"></i></button>
+          </div>
+
+          <div className="github">
+            <button onClick={() => (window.open("https://www.github.com/rahmannnnn"))}><i class="fa fa-github" aria-hidden="true"></i></button>
+          </div>
           <nav>
             
             <div className="arrow">
               <button id="top" onClick={this.scrollToTop}><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
             </div>
+
+
 
             <div className="logo">
               <Link

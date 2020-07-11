@@ -28,6 +28,7 @@ function AppRouter(){
       <Route path="/" exact component={Homepage} />
       <Route path="/create-and-deploy" component={Homepage} />
       <Route path="/more" component={Dummy} />
+      {/* <Route path="/more" render={() => (window.open("https://www.google.com"))} /> */}
     </Router>
   )
 }
