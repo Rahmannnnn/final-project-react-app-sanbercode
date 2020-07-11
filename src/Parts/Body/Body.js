@@ -106,7 +106,7 @@ class Body extends React.Component{
           </div>
         </div>
         { this.state.total > 0 ? <Hasil total={this.state.total}/> : <div></div>}
-        <Converter/>
+        <Converter />
       </body>
       
     );

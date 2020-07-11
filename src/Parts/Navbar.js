@@ -44,7 +44,8 @@ class Navbar extends Component {
             <ul className="right-nav">
               <li><Linked to="header" text="Home"/></li>
               <li><Linked to="article" text="Article"/></li>
-              <li><Linked to="counter" text="Counter"/></li> 
+              <li><Linked to="counter" text="Counter"/></li>
+              <li><Linked to="converter" text="Converter"/></li>  
             </ul>
           </nav>
         </div>

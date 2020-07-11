@@ -2,17 +2,20 @@ import React from 'react';
 import {animateScroll as scroll} from 'react-scroll';
 import {Link} from 'react-router-dom';
 
-function Dummy() {
+function Dummy(props) {
     const scrollToTop = () => {
         scroll.scrollToTop();
     };
+
+    console.log(props.tobe);
+
     return(
         <>
         <div className="arrow">
             <button id="top" onClick={scrollToTop}><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
         </div>
         <div className="back">
-            <Link to="/"><button>Back to Home</button></Link>
+            <Link to={{pathname:"/"}}><button>Back to Home</button></Link>
         </div>
         <div className="addition"></div>
         <div className="dummy">
