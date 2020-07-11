@@ -11,7 +11,6 @@ import {
   Route} from 'react-router-dom';
 
 function Homepage(){
-
   return(
     <>
       <Navbar/>
@@ -22,11 +21,12 @@ function Homepage(){
   )
 }
 
+
 function AppRouter(){
   return(
     <Router>
-      <Route path="/" exact component={Homepage}/>
-      <Route path="/create-and-deploy" component={Homepage}/>
+      <Route path="/" exact component={Homepage} />
+      <Route path="/create-and-deploy" component={Homepage} />
       <Route path="/more" component={Dummy} />
     </Router>
   )

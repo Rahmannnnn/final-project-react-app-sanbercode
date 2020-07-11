@@ -289,6 +289,9 @@ form h1 {
   font-size: 40px;
 }
 
+form input[type="number"]{
+  font-size: 16px;
+}
 form input[id="usia"] {
   background: #fff;
   width: 200px;
